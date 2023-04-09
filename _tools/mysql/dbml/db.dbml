@@ -1,0 +1,17 @@
+Table posts {
+  id bigint [pk, increment, not null]
+  title varchar(256) [not null, note: "投稿のタイトル"]
+  content varchar [default: "", note: "投稿内容"]
+  user_id bigint [ref: > users.id ,note: "投稿ユーザー"]
+  created_at timestamp [note: "投稿時刻"]
+  updated_at timestamp [note: "更新時刻"]
+}
+
+Table users {
+  id bigint [pk, increment, not null]
+  email varchar(256) [not null, note: "メールアドレス"]
+  password varchar(256)  [not null, note: "パスワードハッシュ"]
+  role varchar(256) [not null, note: "ユーザー権限"]
+  created_at timestamp [note: "投稿時刻"]
+  updated_at timestamp [note: "更新時刻"]
+}

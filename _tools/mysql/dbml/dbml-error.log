@@ -1,0 +1,242 @@
+2023-04-02T14:59:14.951Z
+SyntaxError: You have a syntax error at "schema.sql" line 1 column 1. Expected Table Group, comment, end of input, enum, project, references, table, or whitespace but "-" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:38:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected Table Group, comment, end of input, enum, project, references, table, or whitespace but "-" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:38:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:38:27)
+{"start":{"offset":0,"line":1,"column":1},"end":{"offset":1,"line":1,"column":2}}
+
+2023-04-07T05:18:08.563Z
+SyntaxError: You have a syntax error at "db.dbml" line 13 column 32. Expected "default:", "increment", "not null", "note:", "null", "pk", "primary key", "ref:", "unique", comment, or whitespace but "n" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "default:", "increment", "not null", "note:", "null", "pk", "primary key", "ref:", "unique", comment, or whitespace but "n" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+{"start":{"offset":413,"line":13,"column":32},"end":{"offset":414,"line":13,"column":33}}
+
+2023-04-07T05:18:21.920Z
+SyntaxError: You have a syntax error at "db.dbml". EISDIR: illegal operation on a directory, open '/Users/ootatatsuya/GoProject/go-gin-template/go-gin-template/_tools/mysql'
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+Error: EISDIR: illegal operation on a directory, open '/Users/ootatatsuya/GoProject/go-gin-template/go-gin-template/_tools/mysql'
+    at Object.openSync (node:fs:601:3)
+    at Object.writeFileSync (node:fs:2249:35)
+    at OutputFilePlugin.start (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/outputPlugins/outputFilePlugin.js:20:17)
+    at OutputFilePlugin.write (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/outputPlugins/outputFilePlugin.js:30:29)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:53:20
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+
+2023-04-07T05:21:15.841Z
+SyntaxError: You have a syntax error at "db.dbml" line 5 column 24. Expected " " or <>, >, - or < but "p" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected " " or <>, >, - or < but "p" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+{"start":{"offset":170,"line":5,"column":24},"end":{"offset":171,"line":5,"column":25}}
+
+2023-04-07T05:26:16.040Z
+SyntaxError: You have a syntax error at "db.dbml" line 5 column 24. Expected " " or <>, >, - or < but "u" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected " " or <>, >, - or < but "u" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+{"start":{"offset":170,"line":5,"column":24},"end":{"offset":171,"line":5,"column":25}}
+
+2023-04-07T05:26:38.055Z
+SyntaxError: You have a syntax error at "db.dbml" line 5 column 34. Expected " " or <>, >, - or < but "p" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected " " or <>, >, - or < but "p" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+{"start":{"offset":180,"line":5,"column":34},"end":{"offset":181,"line":5,"column":35}}
+
+2023-04-07T05:27:54.329Z
+SyntaxError: You have a syntax error at "db.dbml" line 5 column 46. Expected "default:", "increment", "not null", "note:", "null", "pk", "primary key", "ref:", "unique", comment, or whitespace but "c" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected "default:", "increment", "not null", "note:", "null", "pk", "primary key", "ref:", "unique", comment, or whitespace but "c" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+{"start":{"offset":192,"line":5,"column":46},"end":{"offset":193,"line":5,"column":47}}
+
+2023-04-07T05:30:18.415Z
+SyntaxError: You have a syntax error at "db.dbml" line 5 column 45. Expected ",", "]", comment, or whitespace but "O" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected ",", "]", comment, or whitespace but "O" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+{"start":{"offset":191,"line":5,"column":45},"end":{"offset":192,"line":5,"column":46}}
+
+2023-04-07T05:30:34.341Z
+SyntaxError: You have a syntax error at "db.dbml" line 5 column 35. Expected ",", "]", comment, or whitespace but "O" found.
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:55:13
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+    at Object.dbml2sql (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/index.js:27:23)
+    at Object.<anonymous> (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/bin/dbml2sql.js:4:19)
+    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+    at Module.load (node:internal/modules/cjs/loader:1117:32)
+    at Module._load (node:internal/modules/cjs/loader:958:12)
+
+ROOT_ERROR:
+SyntaxError: Expected ",", "]", comment, or whitespace but "O" found.
+    at peg$buildStructuredError (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:1169:12)
+    at Object.peg$parse [as parse] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/dbmlParser.js:8170:11)
+    at Function.parseDBMLToJSON (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:54:37)
+    at Function.parse (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/parse/Parser.js:81:32)
+    at Object._export [as export] (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/node_modules/@dbml/core/lib/export/index.js:15:37)
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:69
+    at /Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:52:23
+    at Array.forEach (<anonymous>)
+    at generate (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/utils.js:48:14)
+    at exportHandler (/Users/ootatatsuya/.nodebrew/node/v18.15.0/lib/node_modules/@dbml/cli/lib/cli/export.js:41:27)
+{"start":{"offset":181,"line":5,"column":35},"end":{"offset":182,"line":5,"column":36}}
+
