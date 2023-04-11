@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/tatuya-web/go-gin-template/infra"
+	"github.com/tatuya-web/go-gin-template/repository"
 )
 
 type Signin struct {
-	DB             infra.Queryer
+	DB             repository.Queryer
 	Repo           UserGetter
 	TokenGenerator TokenGenerator
 }

@@ -5,12 +5,12 @@ import (
 	"fmt"
 
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/infra"
+	"github.com/tatuya-web/go-gin-template/repository"
 	"golang.org/x/crypto/bcrypt"
 )
 
 type RegisterUser struct {
-	DB   infra.Execer
+	DB   repository.Execer
 	Repo UserRegister
 }
 

@@ -13,7 +13,7 @@ import (
 	"github.com/lestrrat-go/jwx/v2/jwk"
 	"github.com/lestrrat-go/jwx/v2/jwt"
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/utils"
+	"github.com/tatuya-web/go-gin-template/util"
 )
 
 //go:embed cert/secret.pem
@@ -31,10 +31,10 @@ const (
 type JWTer struct {
 	PrivateKey, PublicKey jwk.Key
 	Store                 Store
-	Clocker               utils.Clocker
+	Clocker               util.Clocker
 }
 
-func NewJWTer(s Store, c utils.Clocker) (*JWTer, error) {
+func NewJWTer(s Store, c util.Clocker) (*JWTer, error) {
 	j := &JWTer{Store: s}
 	privKey, err := parse(rawPrivKey)
 	if err != nil {

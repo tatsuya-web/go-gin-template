@@ -7,6 +7,7 @@ import (
 	"github.com/tatuya-web/go-gin-template/domain/model"
 )
 
+//go:generate go run github.com/matryer/moq -out moq_test.go . AddPostService UpdatePostService DeletePostService ListPostService RegisterUserService SigninService SignoutService OwnUserService UpdateUserService DeleteUserService
 type AddPostService interface {
 	AddPost(ctx context.Context, title string, content string) (*model.Post, error)
 }

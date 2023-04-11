@@ -9,7 +9,7 @@ import (
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/tatuya-web/go-gin-template/config"
-	"github.com/tatuya-web/go-gin-template/infra"
+	"github.com/tatuya-web/go-gin-template/repository"
 	"github.com/tatuya-web/go-gin-template/router"
 )
 
@@ -44,7 +44,7 @@ func run(ctx context.Context) error {
 	}))
 
 	//DB初期化
-	db, cleanup, err := infra.New(ctx, cfg)
+	db, cleanup, err := repository.New(ctx, cfg)
 	if err != nil {
 		return err
 	}

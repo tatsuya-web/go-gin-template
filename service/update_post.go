@@ -5,13 +5,12 @@ import (
 	"fmt"
 
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/infra"
 	"github.com/tatuya-web/go-gin-template/repository"
 )
 
 type UpdatePost struct {
-	DBExec  infra.Execer
-	DBQuery infra.Queryer
+	DBExec  repository.Execer
+	DBQuery repository.Queryer
 	Repo    PostUpdater
 }
 

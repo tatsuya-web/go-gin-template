@@ -5,34 +5,34 @@ import (
 	"net/http"
 
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/infra"
+	"github.com/tatuya-web/go-gin-template/repository"
 )
 
-//go:generate go run github.com/matryer/moq -out moq_test.go . PostAdder PostLister
+//go:generate go run github.com/matryer/moq -out moq_test.go . PostAdder PostUpdater PostLister UserRegister UserGetter TokenGenerator TokenDeleter OwnGetter UserDeleter
 type PostAdder interface {
-	AddPost(ctx context.Context, db infra.Execer, p *model.Post) error
+	AddPost(ctx context.Context, db repository.Execer, p *model.Post) error
 }
 
 type PostUpdater interface {
-	IsOwnPost(ctx context.Context, db infra.Queryer, id model.PostID) bool
-	UpdatePost(ctx context.Context, db infra.Execer, p *model.Post) error
+	IsOwnPost(ctx context.Context, db repository.Queryer, id model.PostID) bool
+	UpdatePost(ctx context.Context, db repository.Execer, p *model.Post) error
 }
 
 type PostDeleter interface {
-	IsOwnPost(ctx context.Context, db infra.Queryer, id model.PostID) bool
-	DeletePost(ctx context.Context, db infra.Execer, p *model.Post) error
+	IsOwnPost(ctx context.Context, db repository.Queryer, id model.PostID) bool
+	DeletePost(ctx context.Context, db repository.Execer, p *model.Post) error
 }
 
 type PostLister interface {
-	ListPosts(ctx context.Context, db infra.Queryer, id model.UserID) (model.Posts, error)
+	ListPosts(ctx context.Context, db repository.Queryer, id model.UserID) (model.Posts, error)
 }
 
 type UserRegister interface {
-	RegisterUser(ctx context.Context, db infra.Execer, u *model.User) error
+	RegisterUser(ctx context.Context, db repository.Execer, u *model.User) error
 }
 
 type UserGetter interface {
-	GetUser(ctx context.Context, db infra.Queryer, email string) (*model.User, error)
+	GetUser(ctx context.Context, db repository.Queryer, email string) (*model.User, error)
 }
 
 type TokenGenerator interface {
@@ -44,13 +44,13 @@ type TokenDeleter interface {
 }
 
 type OwnGetter interface {
-	GetOwn(ctx context.Context, db infra.Queryer, id model.UserID) (*model.User, error)
+	GetOwn(ctx context.Context, db repository.Queryer, id model.UserID) (*model.User, error)
 }
 
 type UserUpdater interface {
-	UpdateUser(ctx context.Context, db infra.Execer, u *model.User) error
+	UpdateUser(ctx context.Context, db repository.Execer, u *model.User) error
 }
 
 type UserDeleter interface {
-	DeleteUser(ctx context.Context, db infra.Execer, p *model.User) error
+	DeleteUser(ctx context.Context, db repository.Execer, p *model.User) error
 }

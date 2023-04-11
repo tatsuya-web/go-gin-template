@@ -5,10 +5,9 @@ import (
 
 	"github.com/tatuya-web/go-gin-template/auth"
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/infra"
 )
 
-func (r *Repository) AddPost(ctx context.Context, db infra.Execer, p *model.Post) error {
+func (r *Repository) AddPost(ctx context.Context, db Execer, p *model.Post) error {
 	p.CreatedAt = r.Clocker.Now()
 	p.UpdatedAt = r.Clocker.Now()
 
@@ -28,7 +27,7 @@ func (r *Repository) AddPost(ctx context.Context, db infra.Execer, p *model.Post
 	return nil
 }
 
-func (r *Repository) UpdatePost(ctx context.Context, db infra.Execer, p *model.Post) error {
+func (r *Repository) UpdatePost(ctx context.Context, db Execer, p *model.Post) error {
 	p.UpdatedAt = r.Clocker.Now()
 
 	sql := `UPDATE posts
@@ -47,7 +46,7 @@ func (r *Repository) UpdatePost(ctx context.Context, db infra.Execer, p *model.P
 	return nil
 }
 
-func (r *Repository) DeletePost(ctx context.Context, db infra.Execer, p *model.Post) error {
+func (r *Repository) DeletePost(ctx context.Context, db Execer, p *model.Post) error {
 	sql := `DELETE FROM posts WHERE id = ?`
 	_, err := db.ExecContext(
 		ctx, sql, p.ID,
@@ -59,11 +58,11 @@ func (r *Repository) DeletePost(ctx context.Context, db infra.Execer, p *model.P
 	return nil
 }
 
-func (r *Repository) ListPosts(ctx context.Context, db infra.Queryer, id model.UserID) (model.Posts, error) {
+func (r *Repository) ListPosts(ctx context.Context, db Queryer, id model.UserID) (model.Posts, error) {
 	posts := model.Posts{}
 
 	sql := `SELECT
-								id, title, content, created_at, updated_at
+								id, title, content, user_id, created_at, updated_at
 								FROM posts
 								WHERE user_id = ?`
 	if err := db.SelectContext(ctx, &posts, sql, id); err != nil {
@@ -72,7 +71,7 @@ func (r *Repository) ListPosts(ctx context.Context, db infra.Queryer, id model.U
 	return posts, nil
 }
 
-func (r *Repository) IsOwnPost(ctx context.Context, db infra.Queryer, id model.PostID) bool {
+func (r *Repository) IsOwnPost(ctx context.Context, db Queryer, id model.PostID) bool {
 	ownID, ok := auth.GetUserID(ctx)
 	if !ok {
 		return false

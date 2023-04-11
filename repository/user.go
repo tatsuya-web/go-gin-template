@@ -7,10 +7,9 @@ import (
 
 	"github.com/go-sql-driver/mysql"
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/infra"
 )
 
-func (r *Repository) RegisterUser(ctx context.Context, db infra.Execer, u *model.User) error {
+func (r *Repository) RegisterUser(ctx context.Context, db Execer, u *model.User) error {
 	u.CreatedAt = r.Clocker.Now()
 	u.UpdatedAt = r.Clocker.Now()
 
@@ -33,7 +32,7 @@ func (r *Repository) RegisterUser(ctx context.Context, db infra.Execer, u *model
 	return nil
 }
 
-func (r *Repository) GetUser(ctx context.Context, db infra.Queryer, email string) (*model.User, error) {
+func (r *Repository) GetUser(ctx context.Context, db Queryer, email string) (*model.User, error) {
 	u := &model.User{}
 	sql := `SELECT
 			id, email, password, role, created_at, updated_at 
@@ -44,7 +43,7 @@ func (r *Repository) GetUser(ctx context.Context, db infra.Queryer, email string
 	return u, nil
 }
 
-func (r *Repository) GetOwn(ctx context.Context, db infra.Queryer, id model.UserID) (*model.User, error) {
+func (r *Repository) GetOwn(ctx context.Context, db Queryer, id model.UserID) (*model.User, error) {
 	u := &model.User{}
 
 	sql := `SELECT
@@ -57,7 +56,7 @@ func (r *Repository) GetOwn(ctx context.Context, db infra.Queryer, id model.User
 	return u, nil
 }
 
-func (r *Repository) UpdateUser(ctx context.Context, db infra.Execer, u *model.User) error {
+func (r *Repository) UpdateUser(ctx context.Context, db Execer, u *model.User) error {
 	u.UpdatedAt = r.Clocker.Now()
 
 	sql := `UPDATE users
@@ -74,7 +73,7 @@ func (r *Repository) UpdateUser(ctx context.Context, db infra.Execer, u *model.U
 	return nil
 }
 
-func (r *Repository) DeleteUser(ctx context.Context, db infra.Execer, u *model.User) error {
+func (r *Repository) DeleteUser(ctx context.Context, db Execer, u *model.User) error {
 	sql := `DELETE FROM users WHERE id = ?`
 	_, err := db.ExecContext(
 		ctx, sql, u.ID,

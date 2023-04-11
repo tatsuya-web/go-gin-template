@@ -6,11 +6,11 @@ import (
 
 	"github.com/tatuya-web/go-gin-template/auth"
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/infra"
+	"github.com/tatuya-web/go-gin-template/repository"
 )
 
 type OwnUser struct {
-	DB   infra.Queryer
+	DB   repository.Queryer
 	Repo OwnGetter
 }
 

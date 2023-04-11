@@ -4,19 +4,17 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
-
-	"github.com/tatuya-web/go-gin-template/infra"
 )
 
 type AppConnection struct {
 	// DBインスタンス
-	db infra.Beginner
+	db Beginner
 	// トランザクションで利用するインスタンス
 	Tx *sql.Tx
 }
 
 // トランザクション
-func NewAppConnection(db infra.Beginner) *AppConnection {
+func NewAppConnection(db Beginner) *AppConnection {
 	return &AppConnection{db: db}
 }
 

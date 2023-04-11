@@ -11,12 +11,12 @@ import (
 	"github.com/tatuya-web/go-gin-template/handler"
 	"github.com/tatuya-web/go-gin-template/repository"
 	"github.com/tatuya-web/go-gin-template/service"
-	"github.com/tatuya-web/go-gin-template/utils"
+	"github.com/tatuya-web/go-gin-template/util"
 )
 
 func SetRouting(ctx context.Context, db *sqlx.DB, router *gin.Engine, cfg *config.Config) error {
 
-	clocker := utils.RealClocker{}
+	clocker := util.RealClocker{}
 	rep := repository.Repository{Clocker: clocker}
 	validate := validator.New()
 	rcli, err := repository.NewKVS(ctx, cfg)

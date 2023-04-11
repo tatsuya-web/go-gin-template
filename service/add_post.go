@@ -6,11 +6,11 @@ import (
 
 	"github.com/tatuya-web/go-gin-template/auth"
 	"github.com/tatuya-web/go-gin-template/domain/model"
-	"github.com/tatuya-web/go-gin-template/infra"
+	"github.com/tatuya-web/go-gin-template/repository"
 )
 
 type AddPost struct {
-	DB   infra.Execer
+	DB   repository.Execer
 	Repo PostAdder
 }
 
